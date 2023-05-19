@@ -135,7 +135,7 @@ class Api {
 }
 
 const configApi = {
-  baseUrl: 'http://localhost:3005',
+  baseUrl: 'http://localhost:3000',
 };
 
 const api = new Api(configApi);
