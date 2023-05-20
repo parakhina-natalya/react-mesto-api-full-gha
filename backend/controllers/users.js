@@ -108,7 +108,6 @@ const updateUserInfo = (req, res, next) => {
       }
     });
 };
-
 const updateUserAvatar = (req, res, next) => {
   const { avatar } = req.body;
 
