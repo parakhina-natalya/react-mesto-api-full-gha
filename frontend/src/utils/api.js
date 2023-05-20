@@ -135,7 +135,7 @@ class Api {
 }
 
 const configApi = {
-  baseUrl: 'http://api.mesto.parakhina.nomoredomains.monster',
+  baseUrl: 'https://api.mesto.parakhina.nomoredomains.monster',
 };
 
 const api = new Api(configApi);
