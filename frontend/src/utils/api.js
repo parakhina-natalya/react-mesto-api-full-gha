@@ -135,7 +135,7 @@ class Api {
 }
 
 const configApi = {
-  baseUrl: 'http://localhost:3000',
+  baseUrl: 'http://api.mesto.parakhina.nomoredomains.monster',
 };
 
 const api = new Api(configApi);
