@@ -7,6 +7,7 @@ const { celebrate, Joi } = require('celebrate');
 const router = require('./routes/index');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
 const { createUser, login } = require('./controllers/users');
+const allowedCors = require('./middlewares/cors');
 
 const app = express();
 const { PORT = 3000 } = process.env;
@@ -17,8 +18,6 @@ mongoose.connect('mongodb://127.0.0.1/mestodb')
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-
-const allowedCors = require('./middlewares/cors');
 
 app.use((req, res, next) => {
   const { origin } = req.headers;
@@ -38,6 +37,12 @@ app.use((req, res, next) => {
 });
 
 app.use(requestLogger);
+
+app.get('/crash-test', () => {
+  setTimeout(() => {
+    throw new Error('Сервер сейчас упадёт');
+  }, 0);
+});
 
 app.post('/signup', celebrate({
   body: Joi.object().keys({

@@ -1,8 +1,6 @@
 class Api {
   constructor(configApi) {
     this._baseUrl = configApi.baseUrl;
-    // this._BASE_URL = configApi.BASE_URL;
-    // this._headers = configApi.headers;
   }
 
   _getResponseData(res) {

@@ -7,9 +7,6 @@
 Адрес репозитория: https://github.com/parakhina-natalya/react-mesto-api-full-gha
 
 ## Ссылки на проект
-
-IP-адрес 84.201.176.15
-
-Frontend https://mesto.parakhina.nomoredomains.monster
-
-Backend https://api.mesto.parakhina.nomoredomains.monster
+IP  84.201.176.15
+Frontend  https://mesto.parakhina.nomoredomains.monster
+Backend  https://api.mesto.parakhina.nomoredomains.monster
